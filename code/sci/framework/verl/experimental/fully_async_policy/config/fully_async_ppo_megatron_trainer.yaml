@@ -1,0 +1,54 @@
+hydra:
+  searchpath:
+    - file://verl/trainer/config
+
+defaults:
+  - ppo_megatron_trainer
+  - _self_
+
+async_training:
+
+  staleness_threshold: 0.1
+
+  trigger_parameter_sync_step: 4
+
+  require_batches: 1
+
+  partial_rollout: True
+
+  use_rollout_log_probs: True
+
+  compute_prox_log_prob: False
+
+  use_trainer_do_validate: False
+
+
+  checkpoint_engine:
+    enable: True
+
+    device_buffer_size_M: 4096
+
+    overlap_broadcast_and_consume: False
+
+rollout:
+
+  nnodes: 1
+
+  n_gpus_per_node: 8
+
+  n: 4
+
+  total_rollout_steps: 100
+
+  total_epochs: 10
+
+  test_freq: 1
+
+data:
+  gen_batch_size: 1
+
+actor_rollout_ref:
+  checkpoint_engine: ${oc.select:async_training.checkpoint_engine, null}
+
+  actor:
+    use_rollout_log_probs: ${oc.select:async_training.use_rollout_log_probs, True}

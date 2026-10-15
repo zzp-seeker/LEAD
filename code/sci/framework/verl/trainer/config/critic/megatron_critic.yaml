@@ -1,0 +1,64 @@
+defaults:
+
+  - ../optim@optim: megatron
+
+  - ../engine@megatron: megatron
+
+  - critic
+
+  - _self_
+
+_target_: verl.workers.config.McoreCriticConfig
+
+strategy: megatron
+
+nccl_timeout: 600
+
+model:
+
+  _target_: verl.trainer.config.BaseModelConfig
+
+  override_config:
+
+    model_config: {}
+
+    moe_config:
+
+      freeze_moe_router: False
+
+  lora:
+      type: lora
+
+      rank: 0
+
+      alpha: 32
+
+      dropout: 0.0
+
+      target_modules:
+        - linear_qkv
+        - linear_proj
+        - linear_fc1
+        - linear_fc2
+
+      exclude_modules: []
+
+      dropout_position: pre
+
+      lora_A_init_method: xavier
+
+      lora_B_init_method: zero
+
+      a2a_experimental: False
+
+      dtype: null
+
+      adapter_path: null
+
+      freeze_vision_model: True
+      freeze_vision_projection: True
+      freeze_language_model: True
+
+load_weight: True
+
+data_loader_seed: ${oc.select:actor_rollout_ref.actor.data_loader_seed,null}

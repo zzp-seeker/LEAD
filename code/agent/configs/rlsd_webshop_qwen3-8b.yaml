@@ -1,0 +1,318 @@
+actor_rollout_ref:
+  actor:
+    checkpoint:
+      contents:
+      - model
+      - optimizer
+      - extra
+    clip_ratio: 0.2
+    clip_ratio_c: 3.0
+    clip_ratio_high: 0.2
+    clip_ratio_low: 0.2
+    entropy_coeff: 0.001
+    fsdp_config:
+      fsdp_size: -1
+      offload_policy: false
+      optimizer_offload: true
+      param_offload: true
+      reshard_after_forward: true
+      wrap_policy:
+        min_num_params: 0
+    grad_clip: 1.0
+    invalid_action_penalty_coef: 0.1
+    kl_loss_coef: 0.01
+    kl_loss_type: low_var_kl
+    loss_agg_mode: token-mean
+    optim:
+      lr: 1.0e-06
+      lr_warmup_steps: -1
+      lr_warmup_steps_ratio: 0.0
+      min_lr_ratio: 0.0
+      num_cycles: 0.5
+      total_training_steps: -1
+      warmup_style: constant
+      weight_decay: 0.01
+    policy_loss:
+      loss_mode: vanilla
+    ppo_epochs: 1
+    ppo_max_token_len_per_gpu: 16384
+    ppo_micro_batch_size: null
+    ppo_micro_batch_size_per_gpu: 8
+    ppo_mini_batch_size: 64
+    shuffle: false
+    strategy: fsdp
+    ulysses_sequence_parallel_size: 1
+    use_dynamic_bsz: false
+    use_invalid_action_penalty: true
+    use_kl_loss: true
+    use_torch_compile: true
+  hybrid_engine: true
+  model:
+    enable_activation_offload: false
+    enable_gradient_checkpointing: true
+    external_lib: null
+    lora_alpha: 16
+    lora_rank: 0
+    override_config: {}
+    path: ${oc.env:MODEL_PATH}
+    target_modules: all-linear
+    trust_remote_code: false
+    use_fused_kernels: false
+    use_liger: false
+    use_remove_padding: true
+    use_shm: false
+  ref:
+    fsdp_config:
+      param_offload: true
+      reshard_after_forward: true
+      wrap_policy:
+        min_num_params: 0
+    log_prob_max_token_len_per_gpu: 16384
+    log_prob_micro_batch_size: null
+    log_prob_micro_batch_size_per_gpu: 16
+    log_prob_use_dynamic_bsz: false
+    strategy: fsdp
+    ulysses_sequence_parallel_size: 1
+    use_torch_compile: true
+  rollout:
+    chat_scheduler: null
+    disable_log_stats: true
+    do_sample: true
+    dtype: bfloat16
+    enable_chunked_prefill: false
+    enforce_eager: false
+    engine_kwargs:
+      sglang:
+        attention_backend: null
+      vllm:
+        swap_space: null
+    free_cache_engine: false
+    gpu_memory_utilization: 0.45
+    ignore_eos: false
+    layered_summon: false
+    load_format: dummy_dtensor
+    log_prob_max_token_len_per_gpu: 16384
+    log_prob_micro_batch_size: null
+    log_prob_micro_batch_size_per_gpu: 16
+    log_prob_use_dynamic_bsz: false
+    max_model_len: null
+    max_num_batched_tokens: 8192
+    max_num_seqs: 1024
+    mode: sync
+    multi_turn:
+      enable: false
+      format: chatml
+      max_turns: null
+      tool_config_path: null
+    n: 1
+    name: vllm
+    prompt_length: 4096
+    response_length: 512
+    temperature: 1.0
+    tensor_model_parallel_size: 2
+    top_k: -1
+    top_p: 1
+    use_fire_sampling: false
+    val_kwargs:
+      do_sample: true
+      n: 1
+      temperature: 0.4
+      top_k: -1
+      top_p: 1.0
+algorithm:
+  adv_estimator: grpo
+  filter_groups:
+    enable: false
+    max_num_gen_batches: 10
+  gamma: 1.0
+  gigpo:
+    enable_similarity: false
+    mode: mean_norm
+    similarity_thresh: 0.95
+    step_advantage_w: 1.0
+  kl_ctrl:
+    horizon: 10000
+    kl_coef: 0.001
+    target_kl: 0.1
+    type: fixed
+  kl_penalty: kl
+  lam: 1.0
+  norm_adv_by_std_in_grpo: true
+  pf_ppo:
+    reweight_method: pow
+    weight_pow: 2.0
+  rlsd:
+    clip_eps: 0.2
+    rlsd_lambda: 0.5
+    skill_all: false
+    skills_dir: skills/webshop
+    warmdown_steps: 100
+  use_kl_in_reward: false
+  use_pf_ppo: false
+critic:
+  checkpoint:
+    contents:
+    - model
+    - optimizer
+    - extra
+  cliprange_value: 0.5
+  forward_max_token_len_per_gpu: 32768
+  forward_micro_batch_size: null
+  forward_micro_batch_size_per_gpu: null
+  grad_clip: 1.0
+  loss_agg_mode: token-mean
+  model:
+    enable_activation_offload: false
+    enable_gradient_checkpointing: true
+    external_lib: null
+    fsdp_config:
+      fsdp_size: -1
+      offload_policy: false
+      optimizer_offload: false
+      param_offload: false
+      reshard_after_forward: true
+      wrap_policy:
+        min_num_params: 0
+    lora_alpha: 16
+    lora_rank: 0
+    override_config: {}
+    path: ~/models/deepseek-llm-7b-chat
+    target_modules: all-linear
+    tokenizer_path: ${oc.env:MODEL_PATH}
+    trust_remote_code: false
+    use_remove_padding: false
+    use_shm: false
+  optim:
+    lr: 1.0e-05
+    lr_warmup_steps_ratio: 0.0
+    min_lr_ratio: null
+    total_training_steps: -1
+    warmup_style: constant
+    weight_decay: 0.01
+  ppo_epochs: 1
+  ppo_max_token_len_per_gpu: 32768
+  ppo_micro_batch_size: null
+  ppo_micro_batch_size_per_gpu: null
+  ppo_mini_batch_size: 64
+  rollout_n: 1
+  shuffle: false
+  strategy: fsdp
+  ulysses_sequence_parallel_size: 1
+  use_dynamic_bsz: false
+custom_reward_function:
+  name: compute_score
+  path: null
+data:
+  apply_chat_template_kwargs:
+    enable_thinking: false
+  custom_cls:
+    name: null
+    path: null
+  filter_overlong_prompts: true
+  filter_overlong_prompts_workers: 1
+  image_key: images
+  max_prompt_length: 4096
+  max_response_length: 512
+  prompt_key: prompt
+  return_full_prompt: false
+  return_raw_chat: true
+  return_raw_input_ids: false
+  reward_fn_key: data_source
+  shuffle: true
+  tokenizer: null
+  train_batch_size: 16
+  train_files: ${oc.env:AGENT_DATA_DIR}/webshop/train.parquet
+  truncation: error
+  trust_remote_code: false
+  use_shm: false
+  val_batch_size: 128
+  val_files: ${oc.env:AGENT_DATA_DIR}/webshop/test.parquet
+  video_key: videos
+env:
+  alfworld:
+    eval_dataset: eval_in_distribution
+  env_name: Webshop
+  history_length: 2
+  max_steps: 15
+  resources_per_worker:
+    num_cpus: 0.1
+    num_gpus: 0
+  rollout:
+    n: 8
+  search:
+    log_requests: false
+    search_url: http://127.0.0.1:8000/retrieve
+    timeout: 60
+    topk: 3
+  seed: 0
+  sokoban:
+    dim_room:
+    - 6
+    - 6
+    mode: tiny_rgb_array
+    num_boxes: 1
+    search_depth: 30
+  webshop:
+    human_goals: false
+    use_small: true
+ray_init:
+  num_cpus: 40
+ray_kwargs:
+  ray_init:
+    _temp_dir: /tmp/ray_7cc3f02dcd
+reward_model:
+  enable: false
+  forward_max_token_len_per_gpu: 32768
+  launch_reward_fn_async: false
+  max_length: null
+  micro_batch_size: null
+  micro_batch_size_per_gpu: null
+  model:
+    external_lib: null
+    fsdp_config:
+      fsdp_size: -1
+      param_offload: false
+      reshard_after_forward: true
+      wrap_policy:
+        min_num_params: 0
+    input_tokenizer: ${oc.env:MODEL_PATH}
+    path: ~/models/FsfairX-LLaMA3-RM-v0.1
+    trust_remote_code: false
+    use_fused_kernels: false
+    use_remove_padding: false
+    use_shm: false
+  reward_manager: episode
+  sandbox_fusion:
+    max_concurrent: 64
+    url: null
+  strategy: fsdp
+  ulysses_sequence_parallel_size: 1
+  use_dynamic_bsz: false
+trainer:
+  balance_batch: true
+  critic_warmup: 0
+  default_hdfs_dir: null
+  default_local_dir: ${oc.env:CKPT_DIR}
+  del_local_ckpt_after_load: false
+  device: cuda
+  experiment_name: rlsd_webshop_qwen3-8b
+  log_val_generations: 0
+  logger:
+  - console
+  - wandb
+  max_actor_ckpt_to_keep: null
+  max_critic_ckpt_to_keep: null
+  n_gpus_per_node: 8
+  nnodes: 1
+  project_name: lead
+  ray_wait_register_center_timeout: 1200
+  resume_from_path: null
+  resume_mode: auto
+  rollout_data_dir: ${oc.env:CKPT_DIR}/rollout_traces
+  save_freq: 25
+  test_freq: 5
+  total_epochs: 150
+  total_training_steps: null
+  val_before_train: true
+  val_only: false
+  validation_data_dir: null

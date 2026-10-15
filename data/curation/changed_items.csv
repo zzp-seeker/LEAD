@@ -1,0 +1,766 @@
+domain,split,action,verdict,confidence,original_answer,curated_answer,replaced_option_text,question
+chemistry,train,relabelled,wrong_key,high,A,D,,"What is the molar weight (g/mol) of the molecule with the canonical SMILES representation 'C1CC(NC1)C(=O)O'?
+
+A: 118.150
+B: 152.140
+C: 114.150
+D: 115.150
+Please reason step by step."
+chemistry,train,rewritten,key_not_in_options,medium,C,C,1319.400,"What is the molar weight (g/mol) of the molecule with the canonical SMILES representation 'C1CC(N(C1)C(=O)C(CCCCN)NC(=O)C(CC2=CN(C3=CC=CC=C32)C=O)NC(=O)C(CC(=O)O)NC(=O)C(CC4=CN=CN4)NC(=O)C(CO)NC(=O)C(CC5=CN(C6=CC=CC=C65)C=O)NC(=O)C(CC7=CN=CN7)NC(=O)C8CCC(=O)N8)C(=O)NCC(=O)N'?
+
+A: 1377.200
+B: 1414.700
+C: 1315.400
+D: 1474.400
+Please reason step by step."
+chemistry,train,rewritten,key_not_in_options,medium,A,A,NCC=Cc1ccc(Cl)nc1,"Below is a list of chemical reactants and reagents separated by ""."":
+CC#N.CCN.ClCc1ccc(Cl)nc1.O
+Which of the following SMILES formulas corresponds to the expected product of this chemical reaction?
+
+A: CCNCc1ccc(Cl)nc1
+B: SCCNCc1ccc(Cl)nc1
+C: COCCNCc1ccc(Br)nc1
+D: ON=Cc1ccc(Cl)cc1
+Please reason step by step."
+chemistry,train,rewritten,key_not_in_options,high,A,A,122.170,"What is the molar weight (g/mol) of the molecule with the canonical SMILES representation 'C1CC(NC1)C(=O)O'?
+
+A: 115.130
+B: 145.200
+C: 114.150
+D: 182.020
+Please reason step by step."
+chemistry,train,rewritten,key_not_in_options,high,B,B,153.220,"What is the molar weight (g/mol) of the molecule with the canonical SMILES representation 'C1=CC=C(C=C1)CNCCO'?
+
+A: 118.130
+B: 151.210
+C: 163.210
+D: 119.100
+Please reason step by step."
+chemistry,test,relabelled,wrong_key,high,C,D,,"What is the molar weight (g/mol) of the molecule with the canonical SMILES representation 'C1CCNC(C1)C(=O)O'?
+
+A: 131.130
+B: 179.170
+C: 133.140
+D: 129.160
+Please reason step by step."
+material,train,relabelled,wrong_key,high,B,C,,"Given the following data on dilute solute elements and their diffusion barriers in different host elements, compare these values and answer the question. The diffusion barrier of the dilute solute elements (in eV) is calculated using DFT methods. Choose the combination with the highest diffusion rate.
+
+Given data:
+
+Solute Element 1: Fe, Host Element 1: Pd, Diffusion Barrier 1: -0.14447 eV
+Solute Element 2: Fe, Host Element 2: Pt, Diffusion Barrier 2: -0.00302 eV
+Solute Element 3: Fe, Host Element 3: Sc, Diffusion Barrier 3: -0.28547 eV
+Solute Element 4: Fe, Host Element 4: Ta, Diffusion Barrier 4: -0.19922 eV
+
+A: Fe in Pd
+B: Fe in Pt
+C: Fe in Sc
+D: Fe in Ta
+Please reason step by step."
+physics,train,rewritten,key_not_in_options,medium,C,C,1.15,"Question: What is the predicted deflection angle of light passing near a massive object, given its mass as 7 times of sun and distance 18 km from the observer, according to the theory of General Relativity and the gravitational lensing effect?(Please note that the following content involves constants might be used in the calculations : mass_of_sun=1.99 * 10^(30) kg; G = 6.67 * 10^(-11) m^(3)⋅kg^(−1)⋅s^(−2); c = 3.00 * 10^(8) m/s
+
+A: 2.92
+B: 7.36
+C: 2.29
+D: 3.35
+Please reason step by step."
+physics,train,rewritten,key_not_in_options,medium,D,D,165.63 W,"Question: A plasma thruster uses electric and magnetic fields to accelerate ions and produce thrust. Suppose you are designing a plasma thruster for a space probe that needs to travel a distance of 4 million kilometers. How fast would the plasma thruster need to accelerate the probe in order to reach this distance within 77 days? Assuming the mass of the space probe is 449 kg, and the plasma thruster has an exhaust velocity of 40 km/s, what would be the power requirement of the plasma thruster? Please note that the following content involves constants might be used in the calculations : gravity constant g = 9.8 N/kg. Additionally, please select the option from the given choices that you believe is closest to the correct answer!
+
+A: 325.17 W
+B: 486.81 W
+C: 922.11 W
+D: 1623.15 W
+Please reason step by step."
+physics,train,rewritten,key_not_in_options,high,D,D,4.73 x 10^(-5) Tesla,"Question: A 26 cm long straight rod carries a current of 8
+
+A: Calculate the magnetic field strength at a point located 8 cm away from the center of the rod. Additionally, please select the option from the given choices that you believe is closest to the correct answer! (Please note that the following content involves constants might be used in the calculations : \mu_0 = 1.26 * 10^(-6) V·s/(A·m)
+B: 8.73 x 10^(-5) Tesla
+C: 8.84 x 10^(-5) Tesla
+D: 1.70 x 10^(-5) Tesla
+Please reason step by step."
+physics,train,rewritten,key_not_in_options,high,B,B,79628.19 J/mol,"Question: Calculate the heat of vaporization of substance X at a given temperature using the Clausius-Clapeyron equation, given that the vapor pressure of X at 100°C is 450 mmHg and at 150°C is 790 mmHg. The boiling point of X is 120°C. Additionally, please select the option from the given choices that you believe is closest to the correct answer! (Please note that the following content involves constants might be used in the calculations : R=8.31 J/(mol・K))
+
+A: 55128.69 J/mol
+B: 14769 J/mol
+C: 36115.32 J/mol
+D: 28294.47 J/mol
+Please reason step by step."
+physics,train,relabelled,wrong_key,high,A,B,,"Question: A current-carrying helix has 518 turns with a radius of 7 cm and a current of 5
+
+A: Calculate the magnetic field at a point that is located on the axis of the helix and is 74 cm away from its center. Additionally, please select the option from the given choices that you believe is closest to the correct answer! (Please note that the following content involves constants might be used in the calculations : \mu_0 = 1.26 * 10^(-6) V·s/(A·m)
+B: 1.94 x 10^(-5) Tesla
+C: 8.65 x 10^(-5) Tesla
+D: 4.53 x 10^(-5) Tesla
+Please reason step by step."
+physics,train,rewritten,key_not_in_options,medium,B,B,0.28,"Question: What is the predicted deflection angle of light passing near a massive object, given its mass as 7 times of sun and distance 75 km from the observer, according to the theory of General Relativity and the gravitational lensing effect?(Please note that the following content involves constants might be used in the calculations : mass_of_sun=1.99 * 10^(30) kg; G = 6.67 * 10^(-11) m^(3)⋅kg^(−1)⋅s^(−2); c = 3.00 * 10^(8) m/s
+
+A: 0.66
+B: 0.55
+C: 0.68
+D: 0.47
+Please reason step by step."
+physics,train,rewritten,key_not_in_options,high,D,D,43.82 x 10^(-6) Tesla,"Question: A generator has a wire of length 3 m carrying a current of 6
+
+A: Calculate the magnetic field at a distance of 0.1 m from the wire. Additionally, please select the option from the given choices that you believe is closest to the correct answer! (Please note that the following content involves constants might be used in the calculations : \mu_0 = 1.26 * 10^(-6) V·s/(A·m)
+B: 27.56 x 10^(-6) Tesla
+C: 79.96 x 10^(-6) Tesla
+D: 12.0 x 10^(-6) Tesla
+Please reason step by step."
+physics,train,rewritten,key_not_in_options,high,C,C,158238.64 J/mol,"Question: Calculate the heat of vaporization of substance X at a given temperature using the Clausius-Clapeyron equation, given that the vapor pressure of X at 100°C is 450 mmHg and at 150°C is 790 mmHg. The boiling point of X is 120°C. Additionally, please select the option from the given choices that you believe is closest to the correct answer! (Please note that the following content involves constants might be used in the calculations : R=8.31 J/(mol・K))
+
+A: 299548.61 J/mol
+B: 534032.21 J/mol
+C: 14769 J/mol
+D: 274459.32 J/mol
+Please reason step by step."
+physics,train,rewritten,key_not_in_options,high,A,A,4.02e-27 kg/m^3,"Question: What is the density of a plasma with a temperature of 11 electron volts and an electron number density of 2.4e+19 m^-3? Use the Saha equation to determine the ionization state of the plasma assuming it consists of only hydrogen atoms. Please note that the following content involves constants might be used in the calculations : Vacuum tolerance ε = 8.85e-12 ; Boltzmann constant k = 1.38e-23 ; electronic mass m_e = 9.11e-31 kg ; e = 1.6e-19 C ; proton mass m_p = 1.673e-27 kg ; neutral hydrogen atom mass m_h = 1.673e-27 kg. Additionally, please select the option from the given choices that you believe is closest to the correct answer!
+
+A: 4.02e-08 kg/m^3
+B: 1.28e-27 kg/m^3
+C: 8.26e-27 kg/m^3
+D: 8.2e-27 kg/m^3
+Please reason step by step."
+physics,train,rewritten,key_not_in_options,high,C,C,6.59 x 10^(-7) Tesla,"Question: A rectangular loop of dimensions 6.0 m x 7.0 m carries a current of 2
+
+A: What is the magnitude of the magnetic field at the center of the loop? Additionally, please select the option from the given choices that you believe is closest to the correct answer! (Please note that the following content involves constants might be used in the calculations : \mu_0 = 1.26 * 10^(-6) V·s/(A·m)
+B: 8.97 x 10^(-7) Tesla
+C: 3.51 x 10^(-7) Tesla
+D: 1.75 x 10^(-7) Tesla
+Please reason step by step."
+physics,train,rewritten,key_not_in_options,high,D,D,3.35e-27 kg/m^3,"Question: What is the density of a plasma with a temperature of 36 electron volts and an electron number density of 2.0e+19 m^-3? Use the Saha equation to determine the ionization state of the plasma assuming it consists of only hydrogen atoms. Please note that the following content involves constants might be used in the calculations : Vacuum tolerance ε = 8.85e-12 ; Boltzmann constant k = 1.38e-23 ; electronic mass m_e = 9.11e-31 kg ; e = 1.6e-19 C ; proton mass m_p = 1.673e-27 kg ; neutral hydrogen atom mass m_h = 1.673e-27 kg. Additionally, please select the option from the given choices that you believe is closest to the correct answer!
+
+A: 9.38e-27 kg/m^3
+B: 8.04e-27 kg/m^3
+C: 2.29e-27 kg/m^3
+D: 3.35e-08 kg/m^3
+Please reason step by step."
+physics,train,relabelled,wrong_key,high,C,D,,"Question: A straight wire of length 9 m carries a current of 9
+
+A: Find the magnetic field at a distance of 9 cm from the wire. Additionally, please select the option from the given choices that you believe is closest to the correct answer! (Please note that the following content involves constants might be used in the calculations : \mu_0 = 1.26 * 10^(-6) V·s/(A·m)
+B: 6.47 x 10^(-5) Tesla
+C: 7.47 x 10^(-5) Tesla
+D: 2.0 x 10^(-5) Tesla
+Please reason step by step."
+physics,train,relabelled,wrong_key,high,C,D,,"Question: A copper wire with a length of 48 cm and a diameter of 1 mm is connected to a resistor that carries a current of 8
+
+A: Calculate the magnitude of the magnetic field at a distance of 8 cm from the center of the wire. Assume the wire is straight and the current flows uniformly throughout the wire. Additionally, please select the option from the given choices that you believe is closest to the correct answer! (Please note that the following content involves constants might be used in the calculations : \mu_0 = 1.26 * 10^(-6) V·s/(A·m)
+B: 3.74 x 10^(-5) Tesla
+C: 8.82 x 10^(-5) Tesla
+D: 2.0 x 10^(-5) Tesla
+Please reason step by step."
+physics,train,relabelled,wrong_key,high,B,C,,"Question: A circular loop of radius 20 cm carries a current of 4
+
+A: What is the magnetic field at a point on the axis of the loop, which is at a distance of 56 cm from the center of the loop? Additionally, please select the option from the given choices that you believe is closest to the correct answer! (Please note that the following content involves constants might be used in the calculations : \mu_0 = 1.26 * 10^(-6) V·s/(A·m)
+B: 0.7 x 10^(-6) Tesla
+C: 0.48 x 10^(-6) Tesla
+D: 0.42 x 10^(-6) Tesla
+Please reason step by step."
+physics,train,relabelled,wrong_key,high,A,B,,"Question: A straight wire of length 8 m carries a current of 8
+
+A: Find the magnetic field at a distance of 4 cm from the wire. Additionally, please select the option from the given choices that you believe is closest to the correct answer! (Please note that the following content involves constants might be used in the calculations : \mu_0 = 1.26 * 10^(-6) V·s/(A·m)
+B: 4.0 x 10^(-5) Tesla
+C: 9.26 x 10^(-5) Tesla
+D: 4.22 x 10^(-5) Tesla
+Please reason step by step."
+physics,train,rewritten,key_not_in_options,medium,D,D,1635 Hz,"Question: What is the frequency of gravitational waves emitted by two neutron stars with masses of 3.9 solar masses each, orbiting each other at a distance of 68 km, just before they collide and merge into a black hole? Please note that the following content involves constants might be used in the calculations :\pi = 3.14 ; gravitation constant : G = 6.674e-11 N·m^2/kg^2 ; solar mass = 1.989e30 kg ; velocity of light: c = 3e8 m/s. Additionally, please select the option from the given choices that you believe is closest to the correct answer!
+
+A: 3562 Hz
+B: 3565 Hz
+C: 6079 Hz
+D: 578 Hz
+Please reason step by step."
+physics,train,relabelled,wrong_key,high,C,D,,"Question: A 158 cm long straight rod carries a current of 1
+
+A: Calculate the magnetic field strength at a point located 1 cm away from the center of the rod. Additionally, please select the option from the given choices that you believe is closest to the correct answer! (Please note that the following content involves constants might be used in the calculations : \mu_0 = 1.26 * 10^(-6) V·s/(A·m)
+B: 3.21 x 10^(-5) Tesla
+C: 4.63 x 10^(-5) Tesla
+D: 2.0 x 10^(-5) Tesla
+Please reason step by step."
+physics,train,rewritten,key_not_in_options,high,A,A,"What is the magnetic field at the center of the loop? Additionally, please select the option from the given choices that you believe is closest to the correct answer! (Please note that the following content involves constants might be used in the calculations : \mu_0 = 1.26 * 10^(-6) V·s/(A·m)","Question: A square loop of side length 6.0 m is carrying a current of 5
+
+A: 9.43 x 10^(-7) Tesla
+B: 4.71 x 10^(-7) Tesla
+C: 2.88 x 10^(-7) Tesla
+D: 4.95 x 10^(-7) Tesla
+Please reason step by step."
+physics,train,rewritten,key_not_in_options,high,D,D,146951.63 J/mol,"Question: Calculate the heat of vaporization of substance X at a given temperature using the Clausius-Clapeyron equation, given that the vapor pressure of X at 100°C is 450 mmHg and at 150°C is 790 mmHg. The boiling point of X is 120°C. Additionally, please select the option from the given choices that you believe is closest to the correct answer! (Please note that the following content involves constants might be used in the calculations : R=8.31 J/(mol・K))
+
+A: 728690.62 J/mol
+B: 259993.59 J/mol
+C: 275902.7 J/mol
+D: 14769.0 J/mol
+Please reason step by step."
+physics,train,relabelled,wrong_key,medium,B,C,,"Question: A plasma thruster uses electric and magnetic fields to accelerate ions and produce thrust. Suppose you are designing a plasma thruster for a space probe that needs to travel a distance of 3 million kilometers. How fast would the plasma thruster need to accelerate the probe in order to reach this distance within 75 days? Assuming the mass of the space probe is 191 kg, and the plasma thruster has an exhaust velocity of 20 km/s, what would be the power requirement of the plasma thruster? Please note that the following content involves constants might be used in the calculations : gravity constant g = 9.8 N/kg. Additionally, please select the option from the given choices that you believe is closest to the correct answer!
+
+A: 646.22 W
+B: 27.85 W
+C: 274.65 W
+D: 621.75 W
+Please reason step by step."
+physics,train,relabelled,wrong_key,high,B,C,,"Question: A circular loop of radius 63 cm carries a current of 1
+
+A: What is the magnetic field at a point on the axis of the loop, which is at a distance of 50 cm from the center of the loop? Additionally, please select the option from the given choices that you believe is closest to the correct answer! (Please note that the following content involves constants might be used in the calculations : \mu_0 = 1.26 * 10^(-6) V·s/(A·m)
+B: 0.56 x 10^(-6) Tesla
+C: 0.48 x 10^(-6) Tesla
+D: 0.6 x 10^(-6) Tesla
+Please reason step by step."
+physics,train,relabelled,wrong_key,high,B,C,,"Question: A motor has 670 turns of wire in a circular loop with a radius of 3 cm. The motor carries a current of 1
+
+A: Calculate the magnetic field at the center of the loop. Additionally, please select the option from the given choices that you believe is closest to the correct answer! (Please note that the following content involves constants might be used in the calculations : \mu_0 = 1.26 * 10^(-6) V·s/(A·m)
+B: 5.29 x 10^(-2) Tesla
+C: 1.4 x 10^(-2) Tesla
+D: 9.55 x 10^(-2) Tesla
+Please reason step by step."
+physics,train,rewritten,key_not_in_options,medium,A,A,0.38 N,"Question: A plasma thruster used for space propulsion has an operating voltage of 361V and a current of 3A. If the efficiency of the thruster is 0.7, what is the force produced by the thruster assuming a mass flow rate of 68 mg/s? Additionally, please select the option from the given choices that you believe is closest to the correct answer!
+
+A: 0.32 N
+B: 0.36 N
+C: 0.03 N
+D: 0.13 N
+Please reason step by step."
+physics,train,rewritten,key_not_in_options,medium,A,A,0.42 N,"Question: A plasma thruster used for space propulsion has an operating voltage of 337V and a current of 9A. If the efficiency of the thruster is 0.2, what is the force produced by the thruster assuming a mass flow rate of 29 mg/s? Additionally, please select the option from the given choices that you believe is closest to the correct answer!
+
+A: 0.19 N
+B: 0.34 N
+C: 0.07 N
+D: 0.73 N
+Please reason step by step."
+physics,train,rewritten,key_not_in_options,medium,C,C,475 K,"For an ensemble consisting of 1.00 moles of particles having two energy levels separated by $h v=1.00 \times 10^{-20} \mathrm{~J}$, at what temperature will the internal energy of this system equal $1.00 \mathrm{~kJ}$ ?
+
+A: 400 K
+B: 425 K
+C: 449 K
+D: 500 K
+Please reason step by step."
+physics,train,relabelled,wrong_key,high,C,D,,"Question: A motor has 660 turns of wire in a circular loop with a radius of 6 cm. The motor carries a current of 1
+
+A: Calculate the magnetic field at the center of the loop. Additionally, please select the option from the given choices that you believe is closest to the correct answer! (Please note that the following content involves constants might be used in the calculations : \mu_0 = 1.26 * 10^(-6) V·s/(A·m)
+B: 0.56 x 10^(-2) Tesla
+C: 0.16 x 10^(-2) Tesla
+D: 0.69 x 10^(-2) Tesla
+Please reason step by step."
+physics,train,rewritten,key_not_in_options,high,A,A,"What is the magnetic field at the center of the loop? Additionally, please select the option from the given choices that you believe is closest to the correct answer! (Please note that the following content involves constants might be used in the calculations : \mu_0 = 1.26 * 10^(-6) V·s/(A·m)","Question: A square loop of side length 5.0 m is carrying a current of 5
+
+A: 11.31 x 10^(-7) Tesla
+B: 5.66 x 10^(-7) Tesla
+C: 7.13 x 10^(-7) Tesla
+D: 5.49 x 10^(-7) Tesla
+Please reason step by step."
+physics,train,rewritten,key_not_in_options,high,B,B,72 km,"We treat projectile motion in two dimensions, first without considering air resistance. Let the muzzle velocity of the projectile be $v_0$ and the angle of elevation be $\theta$. The Germans used a long-range gun named Big Bertha in World War I to bombard Paris. Its muzzle velocity was $1,450 \mathrm{~m} / \mathrm{s}$. Find its predicted range of flight if $\theta=55^{\circ}$.
+
+A: 70 km
+B: 202 km
+C: 74 km
+D: 76 km
+Please reason step by step."
+physics,train,rewritten,key_not_in_options,high,A,A,375 J,"Question: If an object with a mass of $5 kg  $ changes speed from $5m/s$ to $10 m/s$, by how much does its kinetic energy change?
+
+A: 187.5 J
+B: 425 J
+C: 125 J
+D: 250 J
+Please reason step by step."
+physics,train,rewritten,key_not_in_options,high,B,B,164 $\mathrm{Jmol}^{-1} \mathrm{~K}^{-1}$,"Determine the standard molar entropy of $\mathrm{Ne}$ under standard thermodynamic conditions.
+
+A: 154 $\mathrm{Jmol}^{-1} \mathrm{~K}^{-1}$
+B: 146 J mol^-1 K^-1
+C: 174 $\mathrm{Jmol}^{-1} \mathrm{~K}^{-1}$
+D: 184 $\mathrm{Jmol}^{-1} \mathrm{~K}^{-1}$
+Please reason step by step."
+physics,train,relabelled,wrong_key,medium,C,D,,"Question: A circular loop of radius 44 cm carries a current of 4
+
+A: What is the magnetic field at a point on the axis of the loop, which is at a distance of 78 cm from the center of the loop? Additionally, please select the option from the given choices that you believe is closest to the correct answer! (Please note that the following content involves constants might be used in the calculations : \mu_0 = 1.26 * 10^(-6) V·s/(A·m)
+B: 0.69 x 10^(-6) Tesla
+C: 0.1 x 10^(-6) Tesla
+D: 0.68 x 10^(-6) Tesla
+Please reason step by step."
+physics,train,rewritten,key_not_in_options,medium,C,C,0.17,"Question: What is the predicted deflection angle of light passing near a massive object, given its mass as 4 times of sun and distance 69 km from the observer, according to the theory of General Relativity and the gravitational lensing effect?(Please note that the following content involves constants might be used in the calculations : mass_of_sun=1.99 * 10^(30) kg; G = 6.67 * 10^(-11) m^(3)⋅kg^(−1)⋅s^(−2); c = 3.00 * 10^(8) m/s
+
+A: 0.26
+B: 0.85
+C: 0.34
+D: 0.13
+Please reason step by step."
+physics,train,rewritten,key_not_in_options,high,D,D,1.07e+47 J,"Question: What is the total amount of energy released in the form of gravitational waves by a supernova explosion that occurred at a distance of 22 Mpc from Earth, assuming the explosion released 1% of its mass in gravitational waves, and the initial mass of the core was 6.0 times that of the sun? Please note that the following content involves constants might be used in the calculations :\pi = 3.14 ; pc = 3.086e16 m ; gravitation constant : G = 6.674e-11 N·m^2/kg^2 ; solar mass = 1.989e30 kg ; velocity of light: c = 3e8 m/s. Additionally, please select the option from the given choices that you believe is closest to the correct answer!
+
+A: 4.44e+47 J
+B: 5.79e+47 J
+C: 6.77e+47 J
+D: 1.07e+46 J
+Please reason step by step."
+physics,train,rewritten,key_not_in_options,high,D,D,8.87 x 10^(-6) Tesla,"Question: A generator has a wire of length 5 m carrying a current of 3
+
+A: Calculate the magnetic field at a distance of 0.3 m from the wire. Additionally, please select the option from the given choices that you believe is closest to the correct answer! (Please note that the following content involves constants might be used in the calculations : \mu_0 = 1.26 * 10^(-6) V·s/(A·m)
+B: 4.0 x 10^(-6) Tesla
+C: 2.83 x 10^(-6) Tesla
+D: 2.0 x 10^(-6) Tesla
+Please reason step by step."
+physics,train,relabelled,wrong_key,high,A,B,,"Question: A current-carrying helix has 146 turns with a radius of 8 cm and a current of 5
+
+A: Calculate the magnetic field at a point that is located on the axis of the helix and is 94 cm away from its center. Additionally, please select the option from the given choices that you believe is closest to the correct answer! (Please note that the following content involves constants might be used in the calculations : \mu_0 = 1.26 * 10^(-6) V·s/(A·m)
+B: 0.35 x 10^(-5) Tesla
+C: 0.31 x 10^(-5) Tesla
+D: 0.32 x 10^(-5) Tesla
+Please reason step by step."
+physics,train,rewritten,key_not_in_options,high,D,D,9.61 x 10^(-6) Tesla,"Question: A generator has a wire of length 7 m carrying a current of 9
+
+A: Calculate the magnetic field at a distance of 0.5 m from the wire. Additionally, please select the option from the given choices that you believe is closest to the correct answer! (Please note that the following content involves constants might be used in the calculations : \mu_0 = 1.26 * 10^(-6) V·s/(A·m)
+B: 1.97 x 10^(-6) Tesla
+C: 3.29 x 10^(-6) Tesla
+D: 3.6 x 10^(-6) Tesla
+Please reason step by step."
+physics,train,rewritten,key_not_in_options,medium,A,A,839.49 W,"Question: A plasma thruster uses electric and magnetic fields to accelerate ions and produce thrust. Suppose you are designing a plasma thruster for a space probe that needs to travel a distance of 1 million kilometers. How fast would the plasma thruster need to accelerate the probe in order to reach this distance within 33 days? Assuming the mass of the space probe is 836 kg, and the plasma thruster has an exhaust velocity of 80 km/s, what would be the power requirement of the plasma thruster? Please note that the following content involves constants might be used in the calculations : gravity constant g = 9.8 N/kg. Additionally, please select the option from the given choices that you believe is closest to the correct answer!
+
+A: 8226.99 W
+B: 791.22 W
+C: 135.88 W
+D: 239.1 W
+Please reason step by step."
+physics,train,rewritten,key_not_in_options,medium,D,D,2445.67 W,"Question: A plasma thruster uses electric and magnetic fields to accelerate ions and produce thrust. Suppose you are designing a plasma thruster for a space probe that needs to travel a distance of 2 million kilometers. How fast would the plasma thruster need to accelerate the probe in order to reach this distance within 24 days? Assuming the mass of the space probe is 904 kg, and the plasma thruster has an exhaust velocity of 57 km/s, what would be the power requirement of the plasma thruster? Please note that the following content involves constants might be used in the calculations : gravity constant g = 9.8 N/kg. Additionally, please select the option from the given choices that you believe is closest to the correct answer!
+
+A: 423.43 W
+B: 144.96 W
+C: 175.28 W
+D: 23967.53 W
+Please reason step by step."
+physics,train,rewritten,key_not_in_options,medium,C,C,0.6 N,"Question: A plasma thruster used for space propulsion has an operating voltage of 270V and a current of 7A. If the efficiency of the thruster is 0.5, what is the force produced by the thruster assuming a mass flow rate of 96 mg/s? Additionally, please select the option from the given choices that you believe is closest to the correct answer!
+
+A: 0.34 N
+B: 0.88 N
+C: 0.43 N
+D: 0.47 N
+Please reason step by step."
+physics,train,rewritten,key_not_in_options,medium,C,C,0.03,"Question: What is the predicted deflection angle of light passing near a massive object, given its mass as 1 times of sun and distance 87 km from the observer, according to the theory of General Relativity and the gravitational lensing effect?(Please note that the following content involves constants might be used in the calculations : mass_of_sun=1.99 * 10^(30) kg; G = 6.67 * 10^(-11) m^(3)⋅kg^(−1)⋅s^(−2); c = 3.00 * 10^(8) m/s
+
+A: 0.45
+B: 0.64
+C: 0.07
+D: 0.99
+Please reason step by step."
+physics,train,rewritten,key_not_in_options,high,D,D,206974.34 J/mol,"Question: Calculate the heat of vaporization of substance X at a given temperature using the Clausius-Clapeyron equation, given that the vapor pressure of X at 100°C is 450 mmHg and at 150°C is 790 mmHg. The boiling point of X is 120°C. Additionally, please select the option from the given choices that you believe is closest to the correct answer! (Please note that the following content involves constants might be used in the calculations : R=8.31 J/(mol・K))
+
+A: 520295.23 J/mol
+B: 788139.21 J/mol
+C: 791109.73 J/mol
+D: 14769.0 J/mol
+Please reason step by step."
+physics,train,rewritten,key_not_in_options,high,A,A,164896.61 J/mol,"Question: Calculate the heat of vaporization of substance X at a given temperature using the Clausius-Clapeyron equation, given that the vapor pressure of X at 100°C is 450 mmHg and at 150°C is 790 mmHg. The boiling point of X is 120°C. Additionally, please select the option from the given choices that you believe is closest to the correct answer! (Please note that the following content involves constants might be used in the calculations : R=8.31 J/(mol・K))
+
+A: 14769.0 J/mol
+B: 659996.65 J/mol
+C: 841231.98 J/mol
+D: 756390.41 J/mol
+Please reason step by step."
+physics,train,relabelled,wrong_key,medium,D,B,,"Question: A 48 cm long straight rod carries a current of 9
+
+A: Calculate the magnetic field strength at a point located 9 cm away from the center of the rod. Additionally, please select the option from the given choices that you believe is closest to the correct answer! (Please note that the following content involves constants might be used in the calculations : \mu_0 = 1.26 * 10^(-6) V·s/(A·m)
+B: 1.85 x 10^(-5) Tesla
+C: 8.71 x 10^(-5) Tesla
+D: 5.84 x 10^(-5) Tesla
+Please reason step by step."
+physics,train,rewritten,key_not_in_options,high,D,D,3.55 x 10^(-5) Tesla,"Question: A straight wire of length 2 m carries a current of 3
+
+A: Find the magnetic field at a distance of 4 cm from the wire. Additionally, please select the option from the given choices that you believe is closest to the correct answer! (Please note that the following content involves constants might be used in the calculations : \mu_0 = 1.26 * 10^(-6) V·s/(A·m)
+B: 4.2 x 10^(-5) Tesla
+C: 6.61 x 10^(-5) Tesla
+D: 1.5 x 10^(-5) Tesla
+Please reason step by step."
+physics,train,rewritten,key_not_in_options,high,C,C,1.56e-26 kg/m^3,"Question: What is the density of a plasma with a temperature of 41 electron volts and an electron number density of 9.3e+19 m^-3? Use the Saha equation to determine the ionization state of the plasma assuming it consists of only hydrogen atoms. Please note that the following content involves constants might be used in the calculations : Vacuum tolerance ε = 8.85e-12 ; Boltzmann constant k = 1.38e-23 ; electronic mass m_e = 9.11e-31 kg ; e = 1.6e-19 C ; proton mass m_p = 1.673e-27 kg ; neutral hydrogen atom mass m_h = 1.673e-27 kg. Additionally, please select the option from the given choices that you believe is closest to the correct answer!
+
+A: 3.17e-27 kg/m^3
+B: 6.55e-27 kg/m^3
+C: 1.56e-07 kg/m^3
+D: 4.05e-27 kg/m^3
+Please reason step by step."
+physics,train,relabelled,wrong_key,medium,B,C,,"Question: A generator has a wire of length 11 m carrying a current of 1
+
+A: Calculate the magnetic field at a distance of 0.4 m from the wire. Additionally, please select the option from the given choices that you believe is closest to the correct answer! (Please note that the following content involves constants might be used in the calculations : \mu_0 = 1.26 * 10^(-6) V·s/(A·m)
+B: 0.73 x 10^(-6) Tesla
+C: 0.5 x 10^(-6) Tesla
+D: 0.46 x 10^(-6) Tesla
+Please reason step by step."
+physics,train,rewritten,key_not_in_options,medium,A,A,2334 Hz,"Question: What is the frequency of gravitational waves emitted by two neutron stars with masses of 1.5 solar masses each, orbiting each other at a distance of 39 km, just before they collide and merge into a black hole? Please note that the following content involves constants might be used in the calculations :\pi = 3.14 ; gravitation constant : G = 6.674e-11 N·m^2/kg^2 ; solar mass = 1.989e30 kg ; velocity of light: c = 3e8 m/s. Additionally, please select the option from the given choices that you believe is closest to the correct answer!
+
+A: 825 Hz
+B: 7503 Hz
+C: 9877 Hz
+D: 2468 Hz
+Please reason step by step."
+physics,train,rewritten,key_not_in_options,high,D,D,4.74 x 10^(-2) Tesla,"Question: A motor has 312 turns of wire in a circular loop with a radius of 2 cm. The motor carries a current of 7
+
+A: Calculate the magnetic field at the center of the loop. Additionally, please select the option from the given choices that you believe is closest to the correct answer! (Please note that the following content involves constants might be used in the calculations : \mu_0 = 1.26 * 10^(-6) V·s/(A·m)
+B: 9.77 x 10^(-2) Tesla
+C: 3.26 x 10^(-2) Tesla
+D: 6.86 x 10^(-2) Tesla
+Please reason step by step."
+physics,train,rewritten,key_not_in_options,high,D,D,5.41 x 10^(-3) Tesla,"Question: A circular coil of radius 2 cm has 77 turns, and carries a current of 8
+
+A: Calculate the magnitude and direction of the magnetic field at the center of the coil. Additionally, please select the option from the given choices that you believe is closest to the correct answer! (Please note that the following content involves constants might be used in the calculations : \mu_0 = 1.26 * 10^(-6) V·s/(A·m)
+B: 4.78 x 10^(-3) Tesla
+C: 4.62 x 10^(-3) Tesla
+D: 1.94 x 10^(-2) Tesla
+Please reason step by step."
+physics,train,rewritten,key_not_in_options,high,B,B,1.61e-26 kg/m^3,"Question: What is the density of a plasma with a temperature of 52 electron volts and an electron number density of 9.6e+19 m^-3? Use the Saha equation to determine the ionization state of the plasma assuming it consists of only hydrogen atoms. Please note that the following content involves constants might be used in the calculations : Vacuum tolerance ε = 8.85e-12 ; Boltzmann constant k = 1.38e-23 ; electronic mass m_e = 9.11e-31 kg ; e = 1.6e-19 C ; proton mass m_p = 1.673e-27 kg ; neutral hydrogen atom mass m_h = 1.673e-27 kg. Additionally, please select the option from the given choices that you believe is closest to the correct answer!
+
+A: 5.9e-27 kg/m^3
+B: 1.61e-07 kg/m^3
+C: 6.64e-27 kg/m^3
+D: 6.09e-27 kg/m^3
+Please reason step by step."
+physics,train,rewritten,key_not_in_options,high,A,A,$74.8^\circ$,"A deuteron (nucleus of deuterium atom consisting of a proton and a neutron) with speed $14.9$ km / s collides elastically with a neutron at rest. Use the approximation that the deuteron is twice the mass of the neutron. If the deuteron is scattered through a LAB angle $\psi = 10^\circ$, the final speed of the deuteron is $v_d = 14.44$ km / s and the final speed of the neutron is $v_n = 5.18$ km / s. Another set of solutions for the final speed is $v_d = 5.12$ km / s for the deuteron and $v_n = 19.79$ km / s for the neutron. What is the maximum possible scattering angle of the deuteron?
+
+A: 30°
+B: $65.3^\circ$
+C: $84.1^\circ$
+D: $70.5^\circ$
+Please reason step by step."
+physics,train,rewritten,key_not_in_options,medium,A,A,2952 Hz,"Question: What is the frequency of gravitational waves emitted by two neutron stars with masses of 2.4 solar masses each, orbiting each other at a distance of 39 km, just before they collide and merge into a black hole? Please note that the following content involves constants might be used in the calculations :\pi = 3.14 ; gravitation constant : G = 6.674e-11 N·m^2/kg^2 ; solar mass = 1.989e30 kg ; velocity of light: c = 3e8 m/s. Additionally, please select the option from the given choices that you believe is closest to the correct answer!
+
+A: 1043 Hz
+B: 8439 Hz
+C: 7887 Hz
+D: 1875 Hz
+Please reason step by step."
+physics,train,rewritten,key_not_in_options,high,A,A,6.8 $10^{-2} \mathrm{~s}^{-1}$,"A simple harmonic oscillator consists of a 100-g mass attached to a spring whose force constant is $10^4 \mathrm{dyne} / \mathrm{cm}$. The mass is displaced $3 \mathrm{~cm}$ and released from rest. Calculate the natural frequency $\nu_0$.
+
+A: 1.59 s^-1
+B: 7.0 $10^{-2} \mathrm{~s}^{-1}$
+C: 6.9 $10^{-1} \mathrm{~s}^{-1}$
+D: 6.9 $10^{-3} \mathrm{~s}^{-1}$
+Please reason step by step."
+physics,train,rewritten,key_not_in_options,medium,D,D,656.1 J,"Question: A pulley system with 75% efficiency is set up to lift a 21kg bag of nails. The bag is lifted to a height of 2.3m by a person pulling on the rope with a force of 91.5N. What is the work done on the bag of nails by the pulley?
+
+A: 710.3 J
+B: 450.2 J
+C: 982.5 J
+D: 473.3 J
+Please reason step by step."
+physics,train,rewritten,key_not_in_options,medium,D,D,26.21 A/m^2,"Question: What is the critical current density of a Josephson junction consisting of a superconducting material with a critical temperature of 11 K and a normal material with a resistivity of 2 Ω-micrometer at a temperature of 2 K? Given that the length and width of the junction are 50 micrometers and 2 micrometers, respectively. Please note that the following content involves constants might be used in the calculations :\pi = 3.14 ; e = 1.6e-19 C. Additionally, please select the option from the given choices that you believe is closest to the correct answer!
+
+A: 1.47 A/m^2
+B: 9.29 A/m^2
+C: 7.54 A/m^2
+D: 2.62e+07 A/m^2
+Please reason step by step."
+physics,train,relabelled,wrong_key,high,C,D,,"Question: A motor has 955 turns of wire in a circular loop with a radius of 8 cm. The motor carries a current of 5
+
+A: Calculate the magnetic field at the center of the loop. Additionally, please select the option from the given choices that you believe is closest to the correct answer! (Please note that the following content involves constants might be used in the calculations : \mu_0 = 1.26 * 10^(-6) V·s/(A·m)
+B: 7.92 x 10^(-2) Tesla
+C: 3.53 x 10^(-2) Tesla
+D: 3.75 x 10^(-2) Tesla
+Please reason step by step."
+physics,train,rewritten,key_not_in_options,medium,A,A,$8 \times 10^7 \mathrm{yr}$,"Two double stars of the same mass as the sun rotate about their common center of mass. Their separation is 4 light years. What is their period of revolution? Answer: $9 \times 10^7 \mathrm{yr}$
+
+A: 9 × 10^7 yr
+B: $9 \times 10^6 \mathrm{yr}$
+C: $10 \times 10^7 \mathrm{yr}$
+D: $9.5 \times 10^7 \mathrm{yr}$
+Please reason step by step."
+physics,train,rewritten,key_not_in_options,medium,D,D,37.34 x 10^(-7) Tesla,"Question: A rectangular loop of dimensions 6.0 m x 3.0 m carries a current of 9
+
+A: What is the magnitude of the magnetic field at the center of the loop? Additionally, please select the option from the given choices that you believe is closest to the correct answer! (Please note that the following content involves constants might be used in the calculations : \mu_0 = 1.26 * 10^(-6) V·s/(A·m)
+B: 93.57 x 10^(-7) Tesla
+C: 25.87 x 10^(-7) Tesla
+D: 26.83 x 10^(-7) Tesla
+Please reason step by step."
+physics,train,rewritten,key_not_in_options,high,C,C,1.4 x 10^(-3) Tesla,"Question: A circular coil of radius 3 cm has 94 turns, and carries a current of 7
+
+A: Calculate the magnitude and direction of the magnetic field at the center of the coil. Additionally, please select the option from the given choices that you believe is closest to the correct answer! (Please note that the following content involves constants might be used in the calculations : \mu_0 = 1.26 * 10^(-6) V·s/(A·m)
+B: 4.92 x 10^(-3) Tesla
+C: 1.38 x 10^(-2) Tesla
+D: 4.39 x 10^(-3) Tesla
+Please reason step by step."
+physics,train,rewritten,key_not_in_options,high,C,C,7.45 x 10^(-7) Tesla,"Question: A square loop of side length 8.0 m is carrying a current of 8
+
+A: What is the magnetic field at the center of the loop? Additionally, please select the option from the given choices that you believe is closest to the correct answer! (Please note that the following content involves constants might be used in the calculations : \mu_0 = 1.26 * 10^(-6) V·s/(A·m)
+B: 8.22 x 10^(-7) Tesla
+C: 11.31 x 10^(-7) Tesla
+D: 5.66 x 10^(-7) Tesla
+Please reason step by step."
+physics,train,relabelled,wrong_key,high,C,D,,"Question: A generator has a wire of length 7 m carrying a current of 5
+
+A: Calculate the magnetic field at a distance of 0.2 m from the wire. Additionally, please select the option from the given choices that you believe is closest to the correct answer! (Please note that the following content involves constants might be used in the calculations : \mu_0 = 1.26 * 10^(-6) V·s/(A·m)
+B: 9.96 x 10^(-6) Tesla
+C: 8.32 x 10^(-6) Tesla
+D: 5.0 x 10^(-6) Tesla
+Please reason step by step."
+physics,train,rewritten,key_not_in_options,medium,D,D,0.59 x 10^(-5) Tesla,"Question: A current-carrying helix has 230 turns with a radius of 5 cm and a current of 1
+
+A: Calculate the magnetic field at a point that is located on the axis of the helix and is 77 cm away from its center. Additionally, please select the option from the given choices that you believe is closest to the correct answer! (Please note that the following content involves constants might be used in the calculations : \mu_0 = 1.26 * 10^(-6) V·s/(A·m)
+B: 0.25 x 10^(-5) Tesla
+C: 0.53 x 10^(-5) Tesla
+D: 0.079 x 10^(-5) Tesla
+Please reason step by step."
+physics,train,rewritten,key_not_in_options,high,A,A,6.27e+46 J,"Question: What is the total amount of energy released in the form of gravitational waves by a supernova explosion that occurred at a distance of 89 Mpc from Earth, assuming the explosion released 1% of its mass in gravitational waves, and the initial mass of the core was 3.5 times that of the sun? Please note that the following content involves constants might be used in the calculations :\pi = 3.14 ; pc = 3.086e16 m ; gravitation constant : G = 6.674e-11 N·m^2/kg^2 ; solar mass = 1.989e30 kg ; velocity of light: c = 3e8 m/s. Additionally, please select the option from the given choices that you believe is closest to the correct answer!
+
+A: 6.27e+45 J
+B: 3.92e+47 J
+C: 9.8e+47 J
+D: 5.23e+47 J
+Please reason step by step."
+physics,train,relabelled,wrong_key,high,C,D,,"Question: A circular loop of radius 28 cm carries a current of 9
+
+A: What is the magnetic field at a point on the axis of the loop, which is at a distance of 78 cm from the center of the loop? Additionally, please select the option from the given choices that you believe is closest to the correct answer! (Please note that the following content involves constants might be used in the calculations : \mu_0 = 1.26 * 10^(-6) V·s/(A·m)
+B: 0.73 x 10^(-6) Tesla
+C: 0.6 x 10^(-6) Tesla
+D: 0.78 x 10^(-6) Tesla
+Please reason step by step."
+physics,train,rewritten,key_not_in_options,high,B,B,5.7 x 10^(-3) Tesla,"Question: A circular coil of radius 2 cm has 83 turns, and carries a current of 6
+
+A: Calculate the magnitude and direction of the magnetic field at the center of the coil. Additionally, please select the option from the given choices that you believe is closest to the correct answer! (Please note that the following content involves constants might be used in the calculations : \mu_0 = 1.26 * 10^(-6) V·s/(A·m)
+B: 1.56 x 10^(-2) Tesla
+C: 4.98 x 10^(-3) Tesla
+D: 4.54 x 10^(-3) Tesla
+Please reason step by step."
+physics,train,rewritten,key_not_in_options,medium,B,B,23.11 A/m^2,"Question: What is the critical current density of a Josephson junction consisting of a superconducting material with a critical temperature of 11 K and a normal material with a resistivity of 2 Ω-micrometer at a temperature of 7 K? Given that the length and width of the junction are 50 micrometers and 2 micrometers, respectively. Please note that the following content involves constants might be used in the calculations :\pi = 3.14 ; e = 1.6e-19 C. Additionally, please select the option from the given choices that you believe is closest to the correct answer!
+
+A: 5.08 A/m^2
+B: 2.31e+07 A/m^2
+C: 8.46 A/m^2
+D: 8.68 A/m^2
+Please reason step by step."
+physics,train,rewritten,key_not_in_options,medium,B,B,-6 $\mathrm{~cm}^3$,"The partial molar volumes of water and ethanol in a solution with $x_{\mathrm{H}_2 \mathrm{O}}=0.45$ at $25^{\circ} \mathrm{C}$ are 17.0 and $57.5 \mathrm{~cm}^3 \mathrm{~mol}^{-1}$, respectively. Calculate the volume change upon mixing sufficient ethanol with $3.75 \mathrm{~mol}$ of water to give this concentration. The densities of water and ethanol are 0.997 and $0.7893 \mathrm{~g} \mathrm{~cm}^{-3}$, respectively, at this temperature.
+
+A: -10 $\mathrm{~cm}^3$
+B: -8 cm^3
+C: -12 $\mathrm{~cm}^3$
+D: -4 $\mathrm{~cm}^3$
+Please reason step by step."
+physics,train,rewritten,key_not_in_options,medium,A,A,0.3,"Question: What is the predicted deflection angle of light passing near a massive object, given its mass as 9 times of sun and distance 90 km from the observer, according to the theory of General Relativity and the gravitational lensing effect?(Please note that the following content involves constants might be used in the calculations : mass_of_sun=1.99 * 10^(30) kg; G = 6.67 * 10^(-11) m^(3)⋅kg^(−1)⋅s^(−2); c = 3.00 * 10^(8) m/s
+
+A: 0.59
+B: 0.48
+C: 0.2
+D: 0.49
+Please reason step by step."
+physics,train,rewritten,key_not_in_options,medium,D,D,39.47 x 10^(-5) Tesla,"Question: A current-carrying helix has 292 turns with a radius of 9 cm and a current of 2
+
+A: Calculate the magnetic field at a point that is located on the axis of the helix and is 14 cm away from its center. Additionally, please select the option from the given choices that you believe is closest to the correct answer! (Please note that the following content involves constants might be used in the calculations : \mu_0 = 1.26 * 10^(-6) V·s/(A·m)
+B: 32.77 x 10^(-5) Tesla
+C: 26.33 x 10^(-5) Tesla
+D: 64.47 x 10^(-5) Tesla
+Please reason step by step."
+physics,train,relabelled,wrong_key,medium,B,C,,"Shot towers were popular in the eighteenth and nineteenth centuries for dropping melted lead down tall towers to form spheres for bullets. The lead solidified while falling and often landed in water to cool the lead bullets. Many such shot towers were built in New York State. Assume a shot tower was constructed at latitude $42^{\circ} \mathrm{N}$, and the lead fell a distance of $27 \mathrm{~m}$. How far did the lead bullets land from the direct vertical?
+
+A: 2.24 $\mathrm{~mm}$
+B: 2.26 $\mathrm{~mm}$
+C: 2.28 $\mathrm{~mm}$
+D: 2.30 $\mathrm{~mm}$
+Please reason step by step."
+physics,train,rewritten,key_not_in_options,high,A,A,1.16e+47 J,"Question: What is the total amount of energy released in the form of gravitational waves by a supernova explosion that occurred at a distance of 55 Mpc from Earth, assuming the explosion released 1% of its mass in gravitational waves, and the initial mass of the core was 6.5 times that of the sun? Please note that the following content involves constants might be used in the calculations :\pi = 3.14 ; pc = 3.086e16 m ; gravitation constant : G = 6.674e-11 N·m^2/kg^2 ; solar mass = 1.989e30 kg ; velocity of light: c = 3e8 m/s. Additionally, please select the option from the given choices that you believe is closest to the correct answer!
+
+A: 1.16e+46 J
+B: 9.93e+47 J
+C: 2.45e+47 J
+D: 3.01e+47 J
+Please reason step by step."
+physics,train,relabelled,wrong_key,medium,D,B,,"Question: A square loop of side length 9.0 m is carrying a current of 3
+
+A: What is the magnetic field at the center of the loop? Additionally, please select the option from the given choices that you believe is closest to the correct answer! (Please note that the following content involves constants might be used in the calculations : \mu_0 = 1.26 * 10^(-6) V·s/(A·m)
+B: 3.87 x 10^(-7) Tesla
+C: 5.73 x 10^(-7) Tesla
+D: 2.46 x 10^(-7) Tesla
+Please reason step by step."
+physics,train,relabelled,wrong_key,high,C,D,,"Question: A copper wire with a length of 99 cm and a diameter of 8 mm is connected to a resistor that carries a current of 8
+
+A: Calculate the magnitude of the magnetic field at a distance of 2 cm from the center of the wire. Assume the wire is straight and the current flows uniformly throughout the wire. Additionally, please select the option from the given choices that you believe is closest to the correct answer! (Please note that the following content involves constants might be used in the calculations : \mu_0 = 1.26 * 10^(-6) V·s/(A·m)
+B: 2.58 x 10^(-5) Tesla
+C: 9.89 x 10^(-5) Tesla
+D: 8.0 x 10^(-5) Tesla
+Please reason step by step."
+physics,train,rewritten,key_not_in_options,medium,D,D,0.63 N,"Question: A plasma thruster used for space propulsion has an operating voltage of 489V and a current of 5A. If the efficiency of the thruster is 0.1, what is the force produced by the thruster assuming a mass flow rate of 81 mg/s? Additionally, please select the option from the given choices that you believe is closest to the correct answer!
+
+A: 0.44 N
+B: 0.04 N
+C: 0.6 N
+D: 0.20 N
+Please reason step by step."
+physics,train,rewritten,key_not_in_options,high,D,D,1.18e+47 J,"Question: What is the total amount of energy released in the form of gravitational waves by a supernova explosion that occurred at a distance of 18 Mpc from Earth, assuming the explosion released 1% of its mass in gravitational waves, and the initial mass of the core was 6.6 times that of the sun? Please note that the following content involves constants might be used in the calculations :\pi = 3.14 ; pc = 3.086e16 m ; gravitation constant : G = 6.674e-11 N·m^2/kg^2 ; solar mass = 1.989e30 kg ; velocity of light: c = 3e8 m/s. Additionally, please select the option from the given choices that you believe is closest to the correct answer!
+
+A: 2.68e+47 J
+B: 6.38e+47 J
+C: 6.56e+47 J
+D: 1.18e+46 J
+Please reason step by step."
+physics,train,relabelled,wrong_key,high,C,D,,"Question: A circular loop of radius 30 cm carries a current of 5
+
+A: What is the magnetic field at a point on the axis of the loop, which is at a distance of 53 cm from the center of the loop? Additionally, please select the option from the given choices that you believe is closest to the correct answer! (Please note that the following content involves constants might be used in the calculations : \mu_0 = 1.26 * 10^(-6) V·s/(A·m)
+B: 3.7 x 10^(-6) Tesla
+C: 3.78 x 10^(-6) Tesla
+D: 1.25 x 10^(-6) Tesla
+Please reason step by step."
+physics,train,rewritten,key_not_in_options,medium,A,A,3.20e-13 Gy,"Question: Calculate the probability of a cosmic ray of energy 5 e+18 eV passing through a typical human body, and estimate the dose of ionizing radiation received by the body due to this cosmic ray. Please note that the following content involves constants might be used in the calculations :absorption area A = 0.1 m^2. Additionally, please select the option from the given choices that you believe is closest to the correct answer!
+
+A: 5.33e-13 Gy
+B: 7.51e-13 Gy
+C: 1.19e-13 Gy
+D: 9.15e-13 Gy
+Please reason step by step."
+physics,train,relabelled,wrong_key,high,B,C,,"Question: A straight wire of length 4 m carries a current of 4
+
+A: Find the magnetic field at a distance of 1 cm from the wire. Additionally, please select the option from the given choices that you believe is closest to the correct answer! (Please note that the following content involves constants might be used in the calculations : \mu_0 = 1.26 * 10^(-6) V·s/(A·m)
+B: 8.25 x 10^(-5) Tesla
+C: 8.0 x 10^(-5) Tesla
+D: 9.32 x 10^(-5) Tesla
+Please reason step by step."
+physics,train,rewritten,key_not_in_options,medium,D,D,6.24 x 10^(-5) Tesla,"Question: A 60 cm long straight rod carries a current of 8
+
+A: Calculate the magnetic field strength at a point located 4 cm away from the center of the rod. Additionally, please select the option from the given choices that you believe is closest to the correct answer! (Please note that the following content involves constants might be used in the calculations : \mu_0 = 1.26 * 10^(-6) V·s/(A·m)
+B: 8.76 x 10^(-5) Tesla
+C: 8.57 x 10^(-5) Tesla
+D: 3.97 x 10^(-5) Tesla
+Please reason step by step."
+physics,train,rewritten,key_not_in_options,medium,A,A,1318 Hz,"Question: What is the frequency of gravitational waves emitted by two neutron stars with masses of 1.2 solar masses each, orbiting each other at a distance of 53 km, just before they collide and merge into a black hole? Please note that the following content involves constants might be used in the calculations :\pi = 3.14 ; gravitation constant : G = 6.674e-11 N·m^2/kg^2 ; solar mass = 1.989e30 kg ; velocity of light: c = 3e8 m/s. Additionally, please select the option from the given choices that you believe is closest to the correct answer!
+
+A: 466 Hz
+B: 2415 Hz
+C: 6109 Hz
+D: 4335 Hz
+Please reason step by step."
+physics,train,rewritten,key_not_in_options,medium,A,A,4.79e+09 m^-3,"Question: What is the density of an argon plasma with a temperature of 15,000 Kelvin, an electron temperature of 10,000 Kelvin, and a plasma frequency of 3.9 MHz? Use the formula for plasma density, n = (ε_0 * m_e * ω_p^2) / (e^2), where ε_0 is the vacuum permittivity, m_e is the mass of the electron, ω_p is the plasma frequency, and e is the elementary charge. Please note that the following content involves constants might be used in the calculations : Vacuum tolerance ε = 8.85e-12 ; electronic mass m_e = 9.11e-31 kg ; e = 1.6e-19 C. Additionally, please select the option from the given choices that you believe is closest to the correct answer!
+
+A: 1.89e+11 m^-3
+B: 5.62e+09 m^-3
+C: 3.5e+09 m^-3
+D: 4.57e+09 m^-3
+Please reason step by step."
+physics,train,relabelled,wrong_key,high,B,C,,"Question: A motor has 437 turns of wire in a circular loop with a radius of 3 cm. The motor carries a current of 7
+
+A: Calculate the magnetic field at the center of the loop. Additionally, please select the option from the given choices that you believe is closest to the correct answer! (Please note that the following content involves constants might be used in the calculations : \mu_0 = 1.26 * 10^(-6) V·s/(A·m)
+B: 9.6 x 10^(-2) Tesla
+C: 6.41 x 10^(-2) Tesla
+D: 3.44 x 10^(-2) Tesla
+Please reason step by step."
+physics,train,rewritten,key_not_in_options,high,B,B,1.43 $10^{24}$,"The half-life of ${ }^{238} \mathrm{U}$ is $4.5 \times 10^9$ years. How many disintegrations occur in $1 \mathrm{~min}$ for a $10 \mathrm{mg}$ sample of this element? The correct answer is close to 1.43 $10^{24}$. Here are the options:
+
+A: 1.43 $10^{23}$
+B: 7.4 x 10^3 disintegrations/min
+C: 1.43 $10^{25}$
+D: 1.43 $10^{26}$
+Please reason step by step."
+physics,train,relabelled,wrong_key,high,B,C,,"Question: A straight wire of length 7 m carries a current of 2
+
+A: Find the magnetic field at a distance of 9 cm from the wire. Additionally, please select the option from the given choices that you believe is closest to the correct answer! (Please note that the following content involves constants might be used in the calculations : \mu_0 = 1.26 * 10^(-6) V·s/(A·m)
+B: 0.25 x 10^(-5) Tesla
+C: 0.44 x 10^(-5) Tesla
+D: 0.18 x 10^(-5) Tesla
+Please reason step by step."
+physics,train,relabelled,wrong_key,high,B,C,,"Question: A straight wire of length 9 m carries a current of 8
+
+A: Find the magnetic field at a distance of 5 cm from the wire. Additionally, please select the option from the given choices that you believe is closest to the correct answer! (Please note that the following content involves constants might be used in the calculations : \mu_0 = 1.26 * 10^(-6) V·s/(A·m)
+B: 2.26 x 10^(-5) Tesla
+C: 3.2 x 10^(-5) Tesla
+D: 9.4 x 10^(-5) Tesla
+Please reason step by step."
+physics,train,rewritten,key_not_in_options,medium,D,D,5.61 x 10^(-4) Tesla,"Question: A toroid with a radius of 93 cm and 426 turns is carrying a current of 3
+
+A: Calculate the magnetic field at a point located on the axis of the toroid,  90 cm away from the center. Additionally, please select the option from the given choices that you believe is closest to the correct answer! (Please note that the following content involves constants might be used in the calculations : \mu_0 = 1.26 * 10^(-6) V·s/(A·m)
+B: 3.21 x 10^(-4) Tesla
+C: 8.28 x 10^(-4) Tesla
+D: 2.84 x 10^(-4) Tesla
+Please reason step by step."
+physics,train,rewritten,key_not_in_options,medium,D,D,1.96 x 10^(-6) Tesla,"Question: A circular loop of radius 62 cm carries a current of 4
+
+A: What is the magnetic field at a point on the axis of the loop, which is at a distance of 16 cm from the center of the loop? Additionally, please select the option from the given choices that you believe is closest to the correct answer! (Please note that the following content involves constants might be used in the calculations : \mu_0 = 1.26 * 10^(-6) V·s/(A·m)
+B: 8.39 x 10^(-6) Tesla
+C: 4.9 x 10^(-6) Tesla
+D: 3.68 x 10^(-6) Tesla
+Please reason step by step."
+physics,train,rewritten,key_not_in_options,medium,D,D,65.61 x 10^(-3) Tesla,"Question: A transformer has a primary coil with 951 turns and a secondary coil with 585 turns. The primary coil carries a current of 4
+
+A: Calculate the magnetic field in the core of the transformer assuming that it has a length of 29 cm, a cross-sectional area of 3 cm², and a permeability of 4π × 10⁻⁷ H/m. Additionally, please select the option from the given choices that you believe is closest to the correct answer! (Please note that the following content involves constants might be used in the calculations : \mu_0 = 1.26 * 10^(-6) V·s/(A·m)
+B: 22.33 x 10^(-3) Tesla
+C: 65.37 x 10^(-3) Tesla
+D: 16.48 x 10^(-3) Tesla
+Please reason step by step."
+physics,train,rewritten,key_not_in_options,medium,D,D,174.12 W,"Question: A plasma thruster uses electric and magnetic fields to accelerate ions and produce thrust. Suppose you are designing a plasma thruster for a space probe that needs to travel a distance of 2 million kilometers. How fast would the plasma thruster need to accelerate the probe in order to reach this distance within 90 days? Assuming the mass of the space probe is 770 kg, and the plasma thruster has an exhaust velocity of 67 km/s, what would be the power requirement of the plasma thruster? Please note that the following content involves constants might be used in the calculations : gravity constant g = 9.8 N/kg. Additionally, please select the option from the given choices that you believe is closest to the correct answer!
+
+A: 964.95 W
+B: 190.98 W
+C: 828.91 W
+D: 1706 W
+Please reason step by step."
+physics,train,relabelled,wrong_key,medium,B,C,,"Question: A 26 cm long straight rod carries a current of 2
+
+A: Calculate the magnetic field strength at a point located 7 cm away from the center of the rod. Additionally, please select the option from the given choices that you believe is closest to the correct answer! (Please note that the following content involves constants might be used in the calculations : \mu_0 = 1.26 * 10^(-6) V·s/(A·m)
+B: 0.88 x 10^(-5) Tesla
+C: 0.5 x 10^(-5) Tesla
+D: 0.22 x 10^(-5) Tesla
+Please reason step by step."
+physics,test,rewritten,key_not_in_options,high,A,A,4.85e-27 kg/m^3,"Question: What is the density of a plasma with a temperature of 95 electron volts and an electron number density of 2.9e+19 m^-3? Use the Saha equation to determine the ionization state of the plasma assuming it consists of only hydrogen atoms. Please note that the following content involves constants might be used in the calculations : Vacuum tolerance ε = 8.85e-12 ; Boltzmann constant k = 1.38e-23 ; electronic mass m_e = 9.11e-31 kg ; e = 1.6e-19 C ; proton mass m_p = 1.673e-27 kg ; neutral hydrogen atom mass m_h = 1.673e-27 kg. Additionally, please select the option from the given choices that you believe is closest to the correct answer!
+
+A: 4.85e-08 kg/m^3
+B: 8.48e-27 kg/m^3
+C: 1.21e-27 kg/m^3
+D: 1.32e-27 kg/m^3
+Please reason step by step."
+physics,test,relabelled,wrong_key,high,C,D,,"Question: Determine the  magnetic field strength at a distance of 1  cm from a straight wire carrying a current of 2
+
+A: The wire has a length of 2 cm, and the current flows in the direction perpendicular to the wire. Additionally, please select the option from the given choices that you believe is closest to the correct answer! (Please note that the following content involves constants might be used in the calculations : \mu_0 = 1.26 * 10^(-6) V·s/(A·m)
+B: 66.43 x 10^(-6) Tesla
+C: 80.87 x 10^(-6) Tesla
+D: 40.0 x 10^(-6) Tesla
+Please reason step by step."
+physics,test,rewritten,key_not_in_options,high,D,D,7.25 x 10^(-3) Tesla,"Question: A circular coil of radius 5 cm has 55 turns, and carries a current of 6
+
+A: Calculate the magnitude and direction of the magnetic field at the center of the coil. Additionally, please select the option from the given choices that you believe is closest to the correct answer! (Please note that the following content involves constants might be used in the calculations : \mu_0 = 1.26 * 10^(-6) V·s/(A·m)
+B: 2.42 x 10^(-3) Tesla
+C: 2.98 x 10^(-3) Tesla
+D: 4.15 x 10^(-3) Tesla
+Please reason step by step."
+physics,test,rewritten,key_not_in_options,high,D,D,380128.28 J/mol,"Question: Calculate the heat of vaporization of substance X at a given temperature using the Clausius-Clapeyron equation, given that the vapor pressure of X at 100°C is 450 mmHg and at 150°C is 790 mmHg. The boiling point of X is 120°C. Additionally, please select the option from the given choices that you believe is closest to the correct answer! (Please note that the following content involves constants might be used in the calculations : R=8.31 J/(mol・K))
+
+A: 752852.37 J/mol
+B: 742173.45 J/mol
+C: 651847.89 J/mol
+D: 14769.02 J/mol
+Please reason step by step."
+physics,test,relabelled,wrong_key,high,A,B,,"Question: A current-carrying helix has 870 turns with a radius of 6 cm and a current of 2
+
+A: Calculate the magnetic field at a point that is located on the axis of the helix and is 21 cm away from its center. Additionally, please select the option from the given choices that you believe is closest to the correct answer! (Please note that the following content involves constants might be used in the calculations : \mu_0 = 1.26 * 10^(-6) V·s/(A·m)
+B: 37.78 x 10^(-5) Tesla
+C: 97.49 x 10^(-5) Tesla
+D: 23.15 x 10^(-5) Tesla
+Please reason step by step."
+physics,test,relabelled,wrong_key,high,B,C,,"Question: A circular loop of radius 81 cm carries a current of 3
+
+A: What is the magnetic field at a point on the axis of the loop, which is at a distance of 11 cm from the center of the loop? Additionally, please select the option from the given choices that you believe is closest to the correct answer! (Please note that the following content involves constants might be used in the calculations : \mu_0 = 1.26 * 10^(-6) V·s/(A·m)
+B: 8.93 x 10^(-6) Tesla
+C: 2.26 x 10^(-6) Tesla
+D: 7.47 x 10^(-6) Tesla
+Please reason step by step."
+physics,test,rewritten,key_not_in_options,high,D,D,7.67 x 10^(-2) Tesla,"Question: A motor has 741 turns of wire in a circular loop with a radius of 4 cm. The motor carries a current of 3
+
+A: Calculate the magnetic field at the center of the loop. Additionally, please select the option from the given choices that you believe is closest to the correct answer! (Please note that the following content involves constants might be used in the calculations : \mu_0 = 1.26 * 10^(-6) V·s/(A·m)
+B: 9.99 x 10^(-2) Tesla
+C: 6.17 x 10^(-2) Tesla
+D: 3.49 x 10^(-2) Tesla
+Please reason step by step."
+physics,test,relabelled,wrong_key,medium,D,C,,"Question: A generator has a wire of length 8 m carrying a current of 3
+
+A: Calculate the magnetic field at a distance of 0.1 m from the wire. Additionally, please select the option from the given choices that you believe is closest to the correct answer! (Please note that the following content involves constants might be used in the calculations : \mu_0 = 1.26 * 10^(-6) V·s/(A·m)
+B: 8.99 x 10^(-6) Tesla
+C: 5.87 x 10^(-6) Tesla
+D: 8.92 x 10^(-6) Tesla
+Please reason step by step."
+physics,test,rewritten,key_not_in_options,high,B,B,9.49e+46 J,"Question: What is the total amount of energy released in the form of gravitational waves by a supernova explosion that occurred at a distance of 56 Mpc from Earth, assuming the explosion released 1% of its mass in gravitational waves, and the initial mass of the core was 5.3 times that of the sun? Please note that the following content involves constants might be used in the calculations :\pi = 3.14 ; pc = 3.086e16 m ; gravitation constant : G = 6.674e-11 N·m^2/kg^2 ; solar mass = 1.989e30 kg ; velocity of light: c = 3e8 m/s. Additionally, please select the option from the given choices that you believe is closest to the correct answer!
+
+A: 4.52e+47 J
+B: 9.49e+45 J
+C: 2.46e+47 J
+D: 4.25e+47 J
+Please reason step by step."
+physics,test,rewritten,key_not_in_options,high,C,C,95270.09 J/mol,"Question: Calculate the heat of vaporization of substance X at a given temperature using the Clausius-Clapeyron equation, given that the vapor pressure of X at 100°C is 450 mmHg and at 150°C is 790 mmHg. The boiling point of X is 120°C. Additionally, please select the option from the given choices that you believe is closest to the correct answer! (Please note that the following content involves constants might be used in the calculations : R=8.31 J/(mol・K))
+
+A: 93460.9 J/mol
+B: 57805.63 J/mol
+C: 14769.02 J/mol
+D: 17445.78 J/mol
+Please reason step by step."
+physics,test,rewritten,key_not_in_options,medium,C,C,1605 Hz,"Question: What is the frequency of gravitational waves emitted by two neutron stars with masses of 2.1 solar masses each, orbiting each other at a distance of 56 km, just before they collide and merge into a black hole? Please note that the following content involves constants might be used in the calculations :\pi = 3.14 ; gravitation constant : G = 6.674e-11 N·m^2/kg^2 ; solar mass = 1.989e30 kg ; velocity of light: c = 3e8 m/s. Additionally, please select the option from the given choices that you believe is closest to the correct answer!
+
+A: 1462 Hz
+B: 9962 Hz
+C: 567 Hz
+D: 5634 Hz
+Please reason step by step."

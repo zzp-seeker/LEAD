@@ -1,0 +1,9 @@
+domain,split,original,curated,unchanged,relabelled,rewritten,removed
+biology,train,450,447,447,0,0,3
+biology,test,50,50,50,0,0,0
+chemistry,train,1890,1861,1856,1,4,29
+chemistry,test,210,209,208,1,0,1
+material,train,841,802,801,1,0,39
+material,test,94,93,93,0,0,1
+physics,train,720,614,524,26,64,106
+physics,test,80,61,50,4,7,19
